@@ -74,12 +74,7 @@ The basic example above is just the beginning. You can create Blinks for various
 * **Governance Voting:** Enable voting on proposals with a simple click.
 * **Token-Gated Content:** Control access to content based on token ownership.
 
-### Additional Considerations
 
-* **Security:** Always prioritize security when handling user funds and sensitive data.
-* **User Experience:** Design Blinks with a clear and intuitive user interface.
-* **Error Handling:** Implement robust error handling to provide informative feedback to users.
-* **Testing:** Thoroughly test your Blinks before deployment to identify and fix issues.
 
 ### References
 * Solana Docs: [https://solana.com/docs](https://solana.com/docs)
