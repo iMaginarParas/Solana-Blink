@@ -4,7 +4,11 @@ Blinks: A Developer's Guide
 
 # Introduction
 
-Blinks are a revolutionary way to interact with the Solana blockchain. By embedding interactive elements directly into platforms like Twitter, they offer a seamless user experience. This guide will walk you through the process of creating your first Blink, from understanding the basics to deploying a functional application.
+Blinks are a revolutionary way to interact with the Solana blockchain. By embedding interactive elements directly into platforms like Twitter, they offer a seamless user experience.
+
+This guide will walk you through the process of creating your first Blink, from understanding the basics to deploying a functional application.
+
+eli5: Think of Blinks as magic links for the Solana world. They're these super-cool URLs that let people do stuff on the blockchain without leaving their favorite app. Imagine clicking a link on Twitter and poof – you own an NFT! That's the blink of an eye kind of awesome.
 
 # Understanding Blinks
 
