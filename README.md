@@ -83,46 +83,47 @@ In your project, create the necessary folders and files for your Solana Actions 
 
 In `actions.js`, implement the GET and POST routes to handle your Solana Actions. Here’s a basic example:
 
+
 export interface ActionGetResponse {
-  /** image url that represents the source of the action request */
   icon: string;
-  /** describes the source of the action request */
   title: string;
-  /** brief summary of the action to be performed */
   description: string;
-  /** button text rendered to the user */
   label: string;
-  /** UI state for the button being rendered to the user */
   disabled?: boolean;
-  links?: {
-    /** list of related Actions a user could perform */
-    actions: LinkedAction[];
-  };
-  /** non-fatal error message to be displayed to the user */
+  links?: LinkedActions;
   error?: ActionError;
+
+  // Additional properties for analytics or tracking
+  analyticsData?: AnalyticsData;
 }
 
-
-
+export interface LinkedActions {
+  actions: LinkedAction[];
+}
 
 export interface LinkedAction {
-  /** URL endpoint for an action */
   href: string;
-  /** button text rendered to the user */
   label: string;
-  /** Parameter to accept user input within an action */
-  parameters?: [ActionParameter];
+  parameters?: ActionParameter[];
 }
- 
-/** Parameter to accept user input within an action */
+
 export interface ActionParameter {
-  /** parameter name in url */
   name: string;
-  /** placeholder text for the user input field */
   label?: string;
-  /** declare if this field is required (defaults to `false`) */
   required?: boolean;
 }
+
+export interface ActionError {
+  code: string;
+  message: string;
+  // Additional details about the error
+}
+
+export enum ButtonState {
+  Enabled = 'enabled',
+  Disabled = 'disabled',
+}
+
 
 
 ### Step 3: Testing Your API
